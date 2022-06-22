@@ -39,7 +39,7 @@ const Home = ({ isAuth }) => {
           </a>
         </div>
         <div className="right">
-          <img src={image} />
+          <img src={image} alt="image" />
         </div>
       </div>
 

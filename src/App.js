@@ -23,7 +23,7 @@ function App() {
     <Router>
       <nav>
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </Link>
         <Link to="/">Home </Link>
         {!isAuth ? (
