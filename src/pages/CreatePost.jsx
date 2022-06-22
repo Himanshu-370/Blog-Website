@@ -33,6 +33,7 @@ const CreatePost = ({ isAuth }) => {
           <label>Title:</label>
           <input
             type="text"
+            isrequired
             placeholder="Title..."
             onChange={(event) => {
               setTitle(event.target.value);
@@ -43,12 +44,15 @@ const CreatePost = ({ isAuth }) => {
           <label>Post:</label>
           <textarea
             placeholder="Write Something..."
+            isrequired
             onChange={(event) => {
               setPostText(event.target.value);
             }}
           />
         </div>
-        <button onClick={createPost}>Submit Post</button>
+        <button onClick={createPost} className="submitpostbtn">
+          <span className="text">Submit Post</span>
+        </button>
       </div>
     </div>
   );

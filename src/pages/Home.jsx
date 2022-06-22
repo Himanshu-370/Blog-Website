@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
+import image from "./blog.png";
 
 const Home = ({ isAuth }) => {
   const [postLists, setPostLists] = useState([]);
@@ -29,6 +30,19 @@ const Home = ({ isAuth }) => {
 
   return (
     <div className="homePage">
+      <div className="hero">
+        <div className="left">
+          <h1>Stay curious.</h1>
+          <p>Discover stories, thinking from writers on any topic</p>
+          <a href="/createpost" className="readmore">
+            Start writing
+          </a>
+        </div>
+        <div className="right">
+          <img src={image} />
+        </div>
+      </div>
+
       {postLists.map((post) => {
         return (
           <div className="post">

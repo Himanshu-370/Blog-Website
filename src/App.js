@@ -6,6 +6,7 @@ import CreatePost from "./pages/CreatePost";
 import Login from "./pages/Login";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
+import logo from "./pages/logo.png";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -21,6 +22,9 @@ function App() {
   return (
     <Router>
       <nav>
+        <Link to="/">
+          <img src={logo} />
+        </Link>
         <Link to="/">Home </Link>
         {!isAuth ? (
           <Link to="/login">Login</Link>

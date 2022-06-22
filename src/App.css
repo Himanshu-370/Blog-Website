@@ -7,7 +7,7 @@ body {
   padding: 0%;
   margin: 0%;
   font-family: "Space Grotesk", sans-serif;
-  background-color: #ece0c9;
+  background-color: #85dcb8;
 }
 
 nav {
@@ -91,6 +91,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  transition: width 0.5s;
 }
 
 .cpContainer button:hover {
@@ -161,17 +162,56 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c38d9e;
+  padding: 30px 0;
+}
+
+.left h1 {
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+.left p {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 15px;
+}
+
+.left a {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  padding: 13px;
+  margin: 0;
+  background-color: #e8a87c;
+  color: black;
+}
+
+.left a:hover {
+  color: white;
+  transition: ease 300ms;
+}
+
+.right img {
+  width: 500px;
 }
 
 .homePage .post {
   width: 800px;
   height: auto;
   max-height: 600px;
-  background-color: rgb(231, 228, 228);
+  background-color: #edf5e1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 20px;
-  padding: 20px;
+  margin: 25px;
+  padding: 20px 25px;
   border-radius: 15px;
 }
 
@@ -179,6 +219,7 @@ textarea {
   display: flex;
   justify-content: center;
   width: 100%;
+  align-items: center;
 }
 
 .postHeader .title {
